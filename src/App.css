@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+body, html, .mainDiv, #root{
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  background-color: rgb(58, 58, 59);
+  height: 10%;
+  position: relative;
+  padding: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header h1{
   color: white;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 4em;
 }
 
-.App-link {
-  color: #61dafb;
+.mainBody{
+  background-color: white;
+  width:100%;
+  height: 100%;
+  border: 1px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clock{
+  background-color: white;
+  width: 30em;
+  height: 30em;
+  border: 0px solid black;
+  border-radius: 100%;
+  margin: auto;
+  vertical-align: middle;
+  margin-top:10em;
+  box-shadow: 1px 1px 100px black;
+}
+
+.time, .date{
+  text-align: center;
+  padding-top: 18%;
+  font-weight: bold;
+}
+
+.time{
+  font-size: 5em;
+}
+
+.date{
+  padding-top: 0px;
+  font-size: 1.5em;
+}
+
+.showDate{
+  display: inline-block;
+  padding-top: 13%;
+  padding-left:40%;
+}
+
+.showDate #dateLabel{
+  padding-left: 10px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.5em;
 }
